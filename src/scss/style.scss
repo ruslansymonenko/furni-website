@@ -111,4 +111,61 @@
 }
 
 
+//----------------Main
+
+//Explore
+
+.store {
+  padding: 164px 0 158px;
+}
+
+.store-content{
+  display: flex;
+  &__descr{
+    height: 342px;
+    width: 228px;
+    margin-right: 114px;
+  }
+  &__descr-title{
+    margin-bottom: 27px;
+  }
+  &__descr-text{
+    margin-bottom: 33px;
+  }
+  &__cards{
+    display: flex;
+
+  }
+  &__card{
+    width: 256px;
+    height: 310px;
+    &-img{
+      max-width: 256px;
+      height: 237px;
+      margin-bottom: 46px;
+    }
+    &-name{
+      text-align: center;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: $mainBlack;
+    }
+    &-price{
+      text-align: center;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: $mainBlack;
+    }
+  }
+}
+
+.store-content__card + .store-content__card{
+  margin-left: 60px;
+}
+
+//Advantages
+
+
 

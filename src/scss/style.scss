@@ -14,6 +14,8 @@
     display: flex;
     justify-content: space-between;
     &__name{
+      display: flex;
+      align-items: center;
       font-weight: 500;
       font-size: 32px;
       line-height: 39px;
@@ -59,6 +61,7 @@
 
 .homepage-content {
   display: flex;
+  position: relative;
   &__presentation{
     height: 297px;
   }
@@ -95,5 +98,17 @@
   &__presentation-btn + .homepage-content__presentation-btn{
     margin-left: 14px;
   }
+  &__img{
+    position: absolute;
+    top: 94px;
+    right: 0;
+    z-index: 10;
+  }
 }
+
+.decor-dots-img-homepage{
+  background-image: url('../images/dots-decor-green.png');
+}
+
+
 

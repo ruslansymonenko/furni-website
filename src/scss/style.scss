@@ -139,6 +139,9 @@
   &__card{
     width: 256px;
     height: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &-img{
       max-width: 256px;
       height: 237px;
@@ -167,5 +170,63 @@
 
 //Advantages
 
+.advantages{
+  padding: 57px 0 140px;
+}
 
+.advantages-content{
+  display: flex;
+  position: relative;
+  &__services{
+    display: flex;
+    flex-direction: column;
+    width: 617px;
+    margin-right: 59px;
+    &-title{
+      margin-bottom: 27px;
+    }
+    &-text{
+      width: 444px;
+      margin-bottom: 89px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #6A6A6A;
+    }
+  }
+  &__services-row{
+    display: flex;
+    margin-bottom: 26px;
+  }
+  &__services-item{
+    width: 216px;
+  }
+}
+
+.services-item__img{
+  margin-bottom: 2px;
+}
+
+.services-item__title{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.services-item__decr{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.advantages-content__img{
+  z-index: 10;
+}
+
+.decor-dots-img-advantages{
+  background-image: url('../images/dots-decor-yellow.png');
+  top: -51px;
+  right: 390px;
+}
 

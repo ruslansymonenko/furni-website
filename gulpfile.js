@@ -47,7 +47,7 @@ function watchTask() {
     }
   });
   watch('src/index.html', buildHtml)
-  watch('src/scss/style.scss', compilecss);
+  watch('src/scss/*', compilecss);
   watch('src/js/**/*.js', jsmin)
   watch('src/images/**/*')
 }

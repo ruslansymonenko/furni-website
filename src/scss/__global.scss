@@ -1,5 +1,8 @@
 @import './__vars.scss';
 
+// font-family: 'Inter', sans-serif;
+// font-family: 'Urbanist', sans-serif;
+
 .container {
   max-width: ($containerWith + $containerPadding) + px;
   width: 100%;
@@ -22,5 +25,11 @@
 @media (max-width: $breakpoint480) {
   max-width: none;
 }
+}
 
+body{
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
 }

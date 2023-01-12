@@ -2,3 +2,98 @@
 @import './__reset.scss';
 @import './__global.scss';
 
+//Header
+
+.header{
+  display: flex;
+  align-items: center;
+  background-color: $mainGreen;
+  color: $mainWhite;
+  &-content{
+    height: 87px;
+    display: flex;
+    justify-content: space-between;
+    &__name{
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 39px;
+    }
+    &__nav{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.header-nav__list{
+  display: flex;
+  &-item {
+    cursor: pointer;
+    & a {
+      font-family: 'Urbanist', sans-serif;
+      margin-right: 43px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      opacity: 0.5;
+      transition: ease-in-out 0.3s;
+    }
+    & a:hover{
+      font-family: 'Inter', sans-serif;
+      opacity: 1;
+      border-bottom: 5px solid $mainYellow;
+    }
+  }
+}
+
+
+//homepage
+
+.homepage{
+  height: calc(100vh - 87px);
+  &-content{
+    padding: 133px 0 157px;
+  }
+}
+
+.homepage-content {
+  display: flex;
+  &__presentation{
+    height: 297px;
+  }
+  &__presentation-text{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 117px;
+    & h1 {
+      color: $mainWhite;
+      font-weight: 600;
+      font-size: 54px;
+      line-height: 65px;
+    }
+  }
+  &__presentation-btns{
+    display: flex;
+  }
+  &__presentation-btn{
+    height: 50px;
+    width: 150px;
+    font-weight: 500;
+    font-size: 16px;
+    color: $mainWhite;
+    line-height: 28px;
+    background-color: transparent;
+    border-radius: 30px;
+    transition: ease-in-out 0.5s;
+    border: 2px solid rgba(255, 255, 255, 0.29);
+    cursor: pointer;
+    &:hover{
+      background-color: $mainYellow;
+    }
+  }
+  &__presentation-btn + .homepage-content__presentation-btn{
+    margin-left: 14px;
+  }
+}
+
